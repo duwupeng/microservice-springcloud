@@ -1,0 +1,7 @@
+DROP table persons if EXISTS
+
+CREATE table persons(
+  id BIGINT BY DEFAULT as IDENTITY (START WITH 1, INCREMENT BY i) NOT NULL,
+  text VARCHAR (20) NOT NULL ,
+  PRIMARY KEY (id)
+);
