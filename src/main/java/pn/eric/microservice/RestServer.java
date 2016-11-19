@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //@EnableScheduling
 //@EnableAsync
 public class RestServer {
-
+    //mvn exec:java -Dexec.mainClass="pn.eric.microservice.RestServer.main"
     public static void main(String[] args) throws Exception {
         SpringApplication.run(RestServer.class, args);
     }

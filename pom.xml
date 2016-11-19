@@ -137,7 +137,12 @@
 
 
 
-
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <version>1.4.2.RELEASE</version>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
 
 
@@ -195,10 +200,14 @@
           </execution>
         </executions>
       </plugin>
+
+
+
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
+          <addResources>true</addResources>
           <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
           <mainClass>pn.eric.microservice.RestServer</mainClass>
         </configuration>
