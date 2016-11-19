@@ -5,9 +5,7 @@
   <groupId>pn.eric.microservice</groupId>
   <artifactId>springboot</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>eureka-server</module>
-  </modules>
+
   <packaging>pom</packaging>
 
   <name>springboot</name>
@@ -66,9 +64,21 @@
 
 
   <dependencies>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-undertow</artifactId>
     </dependency>
 
     <dependency>

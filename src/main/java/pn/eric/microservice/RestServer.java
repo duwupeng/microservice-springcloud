@@ -18,8 +18,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableCaching
-@EnableScheduling
-@EnableAsync
+//@EnableScheduling
+//@EnableAsync
 public class RestServer {
 
     public static void main(String[] args) throws Exception {
