@@ -200,6 +200,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+          <mainClass>pn.eric.microservice.RestServer</mainClass>
         </configuration>
         <!-- mvn spring-boot:repackage -->
         <executions>
